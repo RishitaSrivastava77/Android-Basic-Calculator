@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="GoToCalculator"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="GO BACK"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO TO CALCULATOR">
+
+        </TextView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="ADDITION"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter First Number..."
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:inputType="number"
+        android:id="@+id/et_num1" ></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter Second Number..."
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:inputType="number"
+        android:id="@+id/et_num2"
+        ></EditText>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/yellow"
+        android:text="ADD NOW"
+        android:textColor="@color/white"
+        android:onClick="AddNumber"
+        ></androidx.appcompat.widget.AppCompatButton>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_result"></TextView>
+
+
+</LinearLayout>

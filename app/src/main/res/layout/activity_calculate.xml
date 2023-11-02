@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".Calculate">
+
+    <TextView
+        android:id="@+id/txtinput"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="30+34"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="normal"></TextView>
+
+    <TextView
+        android:id="@+id/txtoutput"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="64"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="normal"></TextView>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="C"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_cancel"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_Back"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_percentage"
+            android:onClick="InputButtononClick">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/purple"
+            android:text="/"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_Div"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_7"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_8"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="9"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_9"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/purple"
+            android:text="*"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_Multiply"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_4"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_5"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_6"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/purple"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_Minus"
+            android:onClick="InputButtononClick">>
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_1"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_2"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_3"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/purple"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_plus"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:columnCount="4">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_0"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="."
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_Dot"
+            android:onClick="InputButtononClick">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/black"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_x"
+            android:onClick="InputButtononClick"
+            >
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/yellow"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/btn_equal"
+            android:onClick="InputButtononClick">
+
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </GridLayout>
+
+
+
+
+
+
+
+</LinearLayout>
